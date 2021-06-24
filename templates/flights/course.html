@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+<form id="form-submit"  action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="container">
+        <label for="name"><b>name</b></label>
+    <input type="text" id="name" placeholder="Enter Username" name="name" required>
+
+        <label for="psw1"><b>age</b></label>
+    <input type="text" id = "psw1" placeholder="Enter Password" name="course" required>
+        <label for="psw2"><b>education</b></label>
+    <input type="text" id = "psw2" placeholder="Enter Password" name="info" required>
+        <label for="psw3"><b>job</b></label>
+    <input type="date" id = "psw3" placeholder="Enter Password" name="date" required>
+
+
+
+
+    <label for="uname"><b>Email</b></label>
+    <input type="text" id="uname" placeholder="Enter email" name="link" required>
+
+
+    <button type="submit">submit</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+</form>
+{% endblock %}
+</body>
+</html>

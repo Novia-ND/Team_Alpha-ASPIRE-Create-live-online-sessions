@@ -1,0 +1,75 @@
+
+                        <a href="{% url 'flights:live' name %}" class="btn" style="text-align:left ;padding:0px;margin:0px;">
+                            <div class="card">
+                                <img src="{% static 'images/blockchain.jpg' %}" class="card-img-top" alt="ML">
+                                <div class="card-body">
+                                <h5>Blockchain</h5>
+                                <p style="overflow: hidden;">Lorem ipsum, or lipsum as it is sometimes known,
+                                    is dummy text used in laying out print, graphic or web designs.</p>
+                                </div>
+                                <div class="card-footer">
+                                <a href="{% url 'flights:live' name %}" class="btn btn-primary text-white font-weoght-bolder float-right">VISIT</a>
+                                </div>
+                             </div>
+                        </a>
+
+                        <a href="{% url 'flights:live' name %}" class="btn" style="text-align:left ;padding:0px;margin:0px;">
+                            <div class="card">
+                                <img src="{% static 'images/cc.jpg' %}" class="card-img-top" alt="ML">
+                                <div class="card-body">
+                                <h5>C Language</h5>
+                                <p style="overflow: hidden;">Lorem ipsum, or lipsum as it is sometimes known,
+                                    is dummy text used in laying out print, graphic or web designs.</p>
+                                </div>
+                                <div class="card-footer">
+                                <a href="{% url 'flights:live' name %}" class="btn btn-primary text-white font-weoght-bolder float-right">VISIT</a>
+                                </div>
+                             </div>
+                        </a>
+
+            </div>
+
+
+            <div class="card-deck mt-4">
+                    <a href="{% url 'flights:live' name %}" class="btn" style="text-align:left ;padding:0px;margin:0px;">
+                        <div class="card">
+                            <img src="{% static 'images/pyhton.png' %}" class="card-img-top" alt="ML">
+                            <div class="card-body">
+                            <h5>Python</h5>
+                            <p style="overflow: hidden;">Lorem ipsum, or lipsum as it is sometimes known,
+                                is dummy text used in laying out print, graphic or web designs.</p>
+                            </div>
+                            <div class="card-footer">
+                            <a href="{% url 'flights:live' name %}" class="btn btn-primary text-white font-weoght-bolder float-right">VISIT</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="{% url 'flights:live' name %}" class="btn" style="text-align:left ;padding:0px;margin:0px;">
+                        <div class="card">
+                            <img src="{% static 'images/web.jpg' %}" class="card-img-top" alt="ML">
+                            <div class="card-body">
+                            <h5>Web Development</h5>
+                            <p style="overflow: hidden;">Lorem ipsum, or lipsum as it is sometimes known,
+                                is dummy text used in laying out print, graphic or web designs.</p>
+                            </div>
+                            <div class="card-footer">
+                            <a href="{% url 'flights:live' name %}" class="btn btn-primary text-white font-weoght-bolder float-right">VISIT</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="{% url 'flights:live' name %}" class="btn" style="text-align:left ;padding:0px;margin:0px;">
+                        <div class="card">
+                            <img src="{% static 'images/ai.jpeg' %}" class="card-img-top" alt="ML">
+                            <div class="card-body">
+                            <h5>Artificial Intelligence</h5>
+                            <p style="overflow: hidden;">Lorem ipsum, or lipsum as it is sometimes known,
+                                is dummy text used in laying out print, graphic or web designs.</p>
+                            </div>
+                            <div class="card-footer">
+                            <a href="{% url 'flights:live' name %}" class="btn btn-primary text-white font-weoght-bolder float-right">VISIT</a>
+                            </div>
+                        </div>
+
+                    </a>
+
+            </div>

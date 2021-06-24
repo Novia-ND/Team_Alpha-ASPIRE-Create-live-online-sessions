@@ -1,0 +1,278 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ClickTravel</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+
+        <!-- CSS here -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudfare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/flightlist.css' %}">
+   </head>
+    {% block content %}
+   <header>
+    <!-- Header Start -->
+   <div class="header-area header-sticky">
+        <div class="main-header ">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- logo -->
+                    <div class="col-xl-2 col-lg-2">
+                          <h1> ClickTravel</h1>    
+                    </div>
+                <div class="col-xl-8 col-lg-8">
+                        <!-- main-menu -->
+                        <div class="main-menu f-right d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">                                                                                                                                     
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#aboutus">About Us</a></li>
+                                    <li><a href="#services">Services</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                    <li><a href="#">Book Flights</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>             
+                  
+                    <!-- Mobile Menu -->
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+    <!-- Header End -->
+</header>
+ 
+
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+         <div class="col-12">
+             <h1 class="display-6" id="flight">Flights For You</h1>
+             <br>
+         </div>
+    </div>
+</div>
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        {% if count > 1 %}
+            <div class="col-xs-12 col-sm-6 col-md-3" id="list">
+                <i class="fas fa-plane" id="air"></i>
+                <h3 style="color:red;">{{n1}}</h3>
+                <p><b><i> {{t11}} -----> {{t21}}  </i></b></p>
+                <p><b><i> {{p1}} </i></b></p>
+                <p><b><i> {{d1}} To {{a1}} </i></b></p>
+            </div>
+        {% endif%}
+
+     {% if count > 2 %}
+            <div class="col-xs-12 col-sm-6 col-md-3" id="list">
+                <i class="fas fa-plane"></i>
+                  <h3 style="color:red;">{{n2}}</h3>
+                <p><b><i> {{t12}} -----> {{t22}}  </i></b></p>
+                <p><b><i> {{p2}} </i></b></p>
+                <p><b><i> {{d2}} To {{a2}} </i></b></p>
+            </div>
+        {% endif%}
+ {% if count > 3 %}
+            <div class="col-xs-12 col-sm-6 col-md-3" id="list">
+                <i class="fas fa-plane"></i>
+                <h3 style="color:red;">{{n3}}</h3>
+                <p><b><i> {{t13}} -----> {{t23}}  </i></b></p>
+                <p><b><i> {{p3}} </i></b></p>
+                <p><b><i> {{d3}} To {{a3}} </i></b></p>
+            </div>
+        {% endif%}
+ {% if count > 4 %}
+            <div class="col-xs-12 col-sm-6 col-md-3" id="list">
+                <i class="fas fa-plane"></i>
+                <h3 style="color:red;">{{n3}}</h3>
+                <p><b><i> {{t13}} -----> {{t23}}  </i></b></p>
+                <p><b><i> {{p3}} </i></b></p>
+                <p><b><i> {{d3}} To {{a3}} </i></b></p>
+            </div>
+        {% endif%}
+ {% if count > 5 %}
+            <div class="col-xs-12 col-sm-6 col-md-3" id="list">
+                <i class="fas fa-plane"></i>
+                <h3 style="color:red;">{{n4}}</h3>
+                <p><b><i> {{t14}} -----> {{t24}}  </i></b></p>
+                <p><b><i> {{p4}} </i></b></p>
+                <p><b><i> {{d4}} To {{a4}} </i></b></p>
+            </div>
+        {% endif%}
+ {% if count > 6 %}
+            <div class="col-xs-12 col-sm-6 col-md-3" id="list">
+                <i class="fas fa-plane"></i>
+                <h3 style="color:red;">{{n5}}</h3>
+                <p><b><i> {{t15}} -----> {{t25}}  </i></b></p>
+                <p><b><i> {{p5}} </i></b></p>
+                <p><b><i> {{d5}} To {{a5}} </i></b></p>
+            </div>
+        {% endif%}
+ {% if count > 7 %}
+            <div class="col-xs-12 col-sm-6 col-md-3" id="list">
+                <i class="fas fa-plane"></i>
+                 <h3 style="color:red;">{{n6}}</h3>
+                <p><b><i> {{t16}} -----> {{t26}}  </i></b></p>
+                <p><b><i> {{p6}} </i></b></p>
+                <p><b><i> {{d6}} To {{a6}} </i></b></p>
+            </div>
+        {% endif%}
+ {% if count > 8 %}
+            <div class="col-xs-12 col-sm-6 col-md-3" id="list">
+                <i class="fas fa-plane"></i>
+             <h3 style="color:red;">{{n7}}</h3>
+                <p><b><i> {{t17}} -----> {{t27}}  </i></b></p>
+                <p><b><i> {{p7}} </i></b></p>
+                <p><b><i> {{d7}} To {{a7}} </i></b></p>
+            </div>
+        {% endif%}
+ {% if count > 9 %}
+            <div class="col-xs-12 col-sm-6 col-md-3" id="list">
+                <i class="fas fa-plane"></i>
+                <h3 style="color:red;">{{n8}}</h3>
+                <p><b><i> {{t18}} -----> {{t28}}  </i></b></p>
+                <p><b><i> {{p8}} </i></b></p>
+                <p><b><i> {{d8}} To {{a8}} </i></b></p>
+            </div>
+        {% endif%}
+ {% if count > 10 %}
+            <div class="col-xs-12 col-sm-6 col-md-3" id="list">
+                <i class="fas fa-plane"></i>
+          <h3 style="color:red;">{{n9}}</h3>
+                <p><b><i> {{t19}} -----> {{t29}}  </i></b></p>
+                <p><b><i> {{p9}} </i></b></p>
+                <p><b><i> {{d9}} To {{a9}} </i></b></p>
+            </div>
+        {% endif%}
+ {% if count > 11 %}
+            <div class="col-xs-12 col-sm-6 col-md-3" id="list">
+                <i class="fas fa-plane"></i>
+                <h3 style="color:red;">{{n10}}</h3>
+                <p><b><i> {{t10}} -----> {{t210}}  </i></b></p>
+                <p><b><i> {{p10}} </i></b></p>
+                <p><b><i> {{d10}} To {{a10}} </i></b></p>
+            </div>
+        {% endif%}
+ {% if count > 12 %}
+            <div class="col-xs-12 col-sm-6 col-md-3" id="list">
+                <i class="fas fa-plane"></i>
+           <h3 style="color:red;">{{n11}}</h3>
+                <p><b><i> {{t111}} -----> {{t211}}  </i></b></p>
+                <p><b><i> {{p11}} </i></b></p>
+                <p><b><i> {{d11}} To {{a11}} </i></b></p>
+            </div>
+        {% endif%}
+ {% if count > 13 %}
+            <div class="col-xs-12 col-sm-6 col-md-3" id="list">
+                <i class="fas fa-plane"></i>
+             <h3 style="color:red;">{{n12}}</h3>
+                <p><b><i> {{t112}} -----> {{t212}}  </i></b></p>
+                <p><b><i> {{p12}} </i></b></p>
+                <p><b><i> {{d12}} To {{a12}} </i></b></p>
+            </div>
+        {% endif%}
+ {% if count > 14 %}
+            <div class="col-xs-12 col-sm-6 col-md-3" id="list">
+                <i class="fas fa-plane"></i>
+            <h3 style="color:red;">{{n13}}</h3>
+                <p><b><i> {{t113}} -----> {{t213}}  </i></b></p>
+                <p><b><i> {{p13}} </i></b></p>
+                <p><b><i> {{d13}} To {{a13}} </i></b></p>
+            </div>
+        {% endif%}
+ {% if count > 15 %}
+            <div class="col-xs-12 col-sm-6 col-md-3" id="list">
+                <i class="fas fa-plane"></i>
+    <h3 style="color:red;">{{n14}}</h3>
+                <p><b><i> {{t114}} -----> {{t214}}  </i></b></p>
+                <p><b><i> {{p14}} </i></b></p>
+                <p><b><i> {{d14}} To {{a14}} </i></b></p>
+            </div>
+        {% endif%}
+ {% if count > 16 %}
+            <div class="col-xs-12 col-sm-6 col-md-3" id="list">
+                <i class="fas fa-plane"></i>
+                    <h3 style="color:red;">{{n15}}</h3>
+                <p><b><i> {{t115}} -----> {{t215}}  </i></b></p>
+                <p><b><i> {{p15}} </i></b></p>
+                <p><b><i> {{d15}} To {{a15}} </i></b></p>
+            </div>
+        {% endif%}
+
+    </div>
+    <hr class="my-4">
+</div>
+<footer>
+    <!-- Footer Start-->
+    <div class="footer-area black-bg footer-padding">
+        <div class="container" id="contact">
+            <div class="row d-flex justify-content-between">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                   <div class="single-footer-caption mb-30">
+                      <!-- logo -->
+                      <div class="footer-logo">
+                        <h1 style="color:yellow;">ClickTravel</h1>
+                      </div>
+                      <div class="footer-social footer-social2">
+                          <a href="#"><i class="fab fa-facebook-f"></i></a>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                          <a href="#"><i class="fas fa-globe"></i></a>
+                      </div>
+                      <div class="footer-pera">
+                      </div>
+                   </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5">
+                    <div class="single-footer-caption mb-30">
+                        <div class="footer-title">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+                    <div class="single-footer-caption mb-30">
+                        <div class="footer-title">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li><a href="#">Tel:1234567890</a></li>
+                                <li><a href="#">Skype:Clicktravel@22</a></li>
+                                <li><a href="#">reservation@clicktravel.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4  col-sm-5">
+                    <div class="single-footer-caption mb-30">
+                        <div class="footer-title">
+                           <h4>Our Location</h4>
+                            <ul>
+                                <li>22 Street Road</li>
+                                <li>Marine Drive </li>
+                                <li>Mumbai</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</main>
+{% endblock %}
+</body>
+</html>
