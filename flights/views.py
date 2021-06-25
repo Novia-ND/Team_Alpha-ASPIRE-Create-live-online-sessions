@@ -99,10 +99,10 @@ def subscribe(request):
 
         smtp_ssl_host = 'smtp.gmail.com'  # smtp.mail.yahoo.com
         smtp_ssl_port = 465
-        username = 'brothersjunction@gmail.com'
-        password = 'brothers123'
-        sender = 'brothersjunction@gmail.com'
-        targets = ['lancedsilva2000@gmail.com', 'codestacks123@gmail.com']
+        username = ''
+        password = ''
+        sender = ''
+        targets = []
 
         msg = MIMEText('Hi, how are you today?')
         msg['Subject'] = 'Hello'
